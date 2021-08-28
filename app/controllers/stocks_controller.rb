@@ -1,5 +1,4 @@
 class StocksController < ApplicationController
-@api = StockQuote::Stock.new(api_key: 'pk_d03a3d58c30a4100bc9e18f2a39c271e')
   
   before_action :set_stock, only: %i[ show edit update destroy ]
   before_action :correct_user, only: [:show, :edit, :update, :destroy]
@@ -7,6 +6,7 @@ class StocksController < ApplicationController
 
   # GET /stocks or /stocks.json
   def index
+    @api = StockQuote::Stock.new(api_key: 'pk_d03a3d58c30a4100bc9e18f2a39c271e')
     @stocks = Stock.all
   end
 

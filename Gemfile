@@ -13,9 +13,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap', '~> 5.1'
 gem 'jquery-rails'
 gem 'stock_quote', '~> 3.0'
-gem 'devise', '~> 4.8'	
-
+gem 'devise', '~> 4.8'
 gem 'bootsnap', '>= 1.4.4', require: false
+# , '~> 4.8'	
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
